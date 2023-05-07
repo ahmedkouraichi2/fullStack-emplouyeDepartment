@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="card col-md-6 offset-3 mt-2">
+    <div class="card-header">Department</div>
+    <div class="card-body">
+      <form (submit)="onSubmit()" [formGroup]="departementFormGroup">
+        <label class="form-label">Name:</label>
+        <input name="name" type="text" placeholder="Name" formControlName="name" required>
+          
+        <button type="submit" >Save</button>
+      </form>
+    </div>
+  </div>
+</div>
+
